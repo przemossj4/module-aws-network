@@ -7,7 +7,7 @@ output "subnet_ids" {
     aws_subnet.public-subnet-a.id,
     aws_subnet.public-subnet-b.id,
     aws_subnet.private-subnet-a.id,
-    aws_subnet.private-subnet-b.id,
+    aws_subnet.private-subnet-b.id
   ]
 }
 
@@ -15,6 +15,6 @@ output "public_subnet_ids" {
   value = [aws_subnet.public-subnet-a.id, aws_subnet.public-subnet-b.id]
 }
 
-output "private_subnets_ids" {
+output "private_subnet_ids" {
   value = [aws_subnet.private-subnet-a.id, aws_subnet.private-subnet-b.id, ]
 }
